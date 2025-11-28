@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+ 
+header {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+   color: #666;
+}
+
+ 
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+ 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+ 
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background: #3d393a;
+    border-radius: 10px;
+}
+
+form label {
+    font-weight: bold;
+    color: white;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #786161;
+}
+
+form button {
+    background-color: #cecabd;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+     background-color: #7e7e74;
+}
+
+ 
+footer {
+    background-color: #200206;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+ 
+.hamburger img {
+    width: 30px;
+    cursor: pointer;
+    display: none;  
+}
+
+#hamburger_checkbox {
+   display: none;
+}
+
+@media (max-width: 700px) {
+
+     .hamburger img {
+     display: block;
+    }
+
+     nav {
+      display: none;
+      margin-top: 10px;
+    }
+
+ 
+    #hamburger_checkbox:checked + nav {
+      display: block;
+    }
+}
+    .gallery img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
